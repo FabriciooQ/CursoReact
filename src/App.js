@@ -1,5 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Componente from "./components/Componente";
+import ComponenteFuncional from "./components/ComponenteFuncional";
+import Propiedades from "./components/propiedades";
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <Componente msg="HOla" />
+      <ComponenteFuncional msg="Hola soy funcional" s />
+      <Propiedades></Propiedades>
     </div>
   );
 }
