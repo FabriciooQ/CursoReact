@@ -3,6 +3,7 @@ import "./App.css";
 import Componente from "./components/Componente";
 import ComponenteFuncional from "./components/ComponenteFuncional";
 import Propiedades from "./components/propiedades";
+import Contador from "./components/EstadoClase";
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
       <Componente msg="HOla" />
       <ComponenteFuncional msg="Hola soy funcional" s />
       <Propiedades></Propiedades>
+      <hr />
+      <Contador />
     </div>
   );
 }
