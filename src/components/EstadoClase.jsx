@@ -9,10 +9,9 @@ class Contador extends Component{
 
         setInterval(() => {
             this.setState({
-                contador: this.state.numero+1,
-            });
-            console.log(this.state.numero);
-        }, 1000);
+                numero: this.state.numero+1
+            })
+        }, 1000)
     }
 
     render(){

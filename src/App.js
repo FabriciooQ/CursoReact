@@ -4,6 +4,8 @@ import Componente from "./components/Componente";
 import ComponenteFuncional from "./components/ComponenteFuncional";
 import Propiedades from "./components/propiedades";
 import Contador from "./components/EstadoClase";
+import Renderizado from "./components/Renderizado";
+import Contador2 from "./components/Contador2";
 
 function App() {
   return (
@@ -27,6 +29,10 @@ function App() {
       <Propiedades></Propiedades>
       <hr />
       <Contador />
+      <hr />
+      <Renderizado></Renderizado>
+      <hr />
+      <Contador2></Contador2>
     </div>
   );
 }
