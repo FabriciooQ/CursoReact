@@ -1,6 +1,38 @@
 import React, {Component} from "react";
 
-export default class Contador2 extends Component{
+class Contador3 extends Component{
+    state = {
+        numero:0
+    }
+    sumar = () => {
+        this.setState({
+            numero: this.state.numero + 1 
+        })
+    }
+
+    restar = () => {
+        this.setState({
+            numero: this.state.numero - 1 
+        })
+    }
+
+    render(){
+        return(
+            <>
+            <h1>Contador 2</h1>
+            <h3>{this.state.numero}</h3>
+            <nav>
+                <button onClick={this.sumar}><b>+</b></button>
+                <button onClick={this.restar}><b>-</b></button>
+            </nav>
+            </>
+        )
+    }
+
+}
+
+
+class Contador2 extends Component{
     constructor(props){
         super(props)
         this.state = {
@@ -38,6 +70,4 @@ export default class Contador2 extends Component{
     }
 }
 
-function sumar(){
-
-}
+export {Contador2,Contador3}
