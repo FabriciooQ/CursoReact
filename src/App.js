@@ -8,6 +8,10 @@ import Renderizado from "./components/Renderizado";
 import {Contador2, Contador3} from "./components/Contador2";
 import HookUseState from "./components/UseState";
 import ScrollY from "./components/ScrollY";
+import { Contador2, Contador3 } from "./components/Contador2";
+import { Padre, Hijo } from "./components/ComunicacionEntreComponentes";
+import CicloDeVida from "./components/CicloDeVida";
+
 
 function App() {
   return (
@@ -35,12 +39,15 @@ function App() {
       <Renderizado></Renderizado>
       <hr />
       <Contador2></Contador2>
-      <hr/>
+      <hr />
       <Contador3></Contador3>
       <hr />
       <HookUseState texto="Contador con useState"></HookUseState>
       <hr/>
       <ScrollY></ScrollY>
+      <Padre></Padre>
+      <hr />
+      <CicloDeVida></CicloDeVida>
     </div>
   );
 }
