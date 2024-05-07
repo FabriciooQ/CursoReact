@@ -6,6 +6,8 @@ import Propiedades from "./components/propiedades";
 import Contador from "./components/EstadoClase";
 import Renderizado from "./components/Renderizado";
 import {Contador2, Contador3} from "./components/Contador2";
+import HookUseState from "./components/UseState";
+import ScrollY from "./components/ScrollY";
 
 function App() {
   return (
@@ -35,6 +37,10 @@ function App() {
       <Contador2></Contador2>
       <hr/>
       <Contador3></Contador3>
+      <hr />
+      <HookUseState texto="Contador con useState"></HookUseState>
+      <hr/>
+      <ScrollY></ScrollY>
     </div>
   );
 }
