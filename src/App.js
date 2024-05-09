@@ -8,9 +8,10 @@ import Renderizado from "./components/Renderizado";
 import {Contador2, Contador3} from "./components/Contador2";
 import HookUseState from "./components/UseState";
 import ScrollY from "./components/ScrollY";
-import { Contador2, Contador3 } from "./components/Contador2";
 import { Padre, Hijo } from "./components/ComunicacionEntreComponentes";
 import CicloDeVida from "./components/CicloDeVida";
+import Reloj from "./components/Reloj";
+
 
 
 function App() {
@@ -48,6 +49,8 @@ function App() {
       <Padre></Padre>
       <hr />
       <CicloDeVida></CicloDeVida>
+      <hr/>
+      <Reloj></Reloj>
     </div>
   );
 }
